@@ -1,47 +1,30 @@
 ---
 title: "AI/ML API integrations"
+sidebarTitle: "AI/ML API"
 description: "Integrate with AI/ML API using LangChain Python."
 ---
 
->[AI/ML API](https://aimlapi.com/app/?utm_source=langchain&utm_medium=github&utm_campaign=integration) provides a single API for accessing 300+ hosted foundation models (DeepSeek, Gemini, GPT, and more) with enterprise-grade uptime and throughput.
+This page covers all LangChain integrations with [AI/ML API](https://aimlapi.com/).
 
-## Installation and setup
+[AI/ML API](https://aimlapi.com/) is a unified, OpenAI-compatible API giving access to 1,000+ AI models — LLMs, image, video, audio, and embedding models — from providers such as OpenAI, Anthropic, Google, and Meta, through a single endpoint and API key.
 
-- Install the AI/ML API integration package.
+## Installation
 
-  ```bash
-  pip install langchain-aimlapi
-  ```
-
-- Create an account at [aimlapi.com](https://aimlapi.com/app/?utm_source=langchain&utm_medium=github&utm_campaign=integration) and generate an API key.
-- Authenticate by setting the `AIMLAPI_API_KEY` environment variable.
-
-```python
-import os
-
-os.environ["AIMLAPI_API_KEY"] = "aimlapi_..."
+```bash
+pip install -U langchain-aimlapi
 ```
 
-## Chat models
+## Environment
 
-See a [usage example](https://docs.aimlapi.com/).
+Get an API key from the [AI/ML API dashboard](https://aimlapi.com/app/keys) and set it as the `AIMLAPI_API_KEY` environment variable.
 
-```python
-from langchain_aimlapi import ChatAIMLAPI
-```
+## Model interfaces
 
-## LLMs
-
-See a [usage example](/oss/integrations/llms/aimlapi).
-
-```python
-from langchain_aimlapi import AIMLAPILLM
-```
-
-## Embedding models
-
-See a [usage example](https://docs.aimlapi.com/).
-
-```python
-from langchain_aimlapi import AIMLAPIEmbeddings
-```
+<Columns cols={2}>
+    <Card title="ChatAimlapi" href="/oss/integrations/chat/aimlapi" cta="Get started" icon="message" arrow>
+        Access chat models through AI/ML API's OpenAI-compatible endpoint.
+    </Card>
+    <Card title="AimlapiEmbeddings" href="/oss/integrations/embeddings/aimlapi" cta="Get started" icon="stack-2" arrow>
+        AI/ML API embedding models.
+    </Card>
+</Columns>
