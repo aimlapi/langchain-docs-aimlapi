@@ -1,0 +1,41 @@
+---
+title: "AI/ML API integrations"
+sidebarTitle: "AI/ML API"
+description: "Integrate with AI/ML API using LangChain Python."
+---
+
+This page covers all LangChain integrations with [AI/ML API](https://aimlapi.com/).
+
+[AI/ML API](https://aimlapi.com/) is a unified, OpenAI-compatible API giving access to 1,000+ AI models — LLMs, image, video, audio, and embedding models — from providers such as OpenAI, Anthropic, Google, and Meta, through a single endpoint and API key.
+
+## Installation
+
+```bash
+pip install -U langchain-aimlapi
+```
+
+## Environment
+
+Get an API key from the [AI/ML API dashboard](https://aimlapi.com/app/keys) and set it as the `AIMLAPI_API_KEY` environment variable.
+
+## Model interfaces
+
+<Columns cols={2}>
+    <Card title="ChatAimlapi" href="/oss/python/integrations/chat/aimlapi" cta="Get started" icon="message" arrow>
+        Access chat models through AI/ML API's OpenAI-compatible endpoint.
+    </Card>
+    <Card title="AimlapiEmbeddings" href="/oss/python/integrations/embeddings/aimlapi" cta="Get started" icon="stack-2" arrow>
+        AI/ML API embedding models.
+    </Card>
+</Columns>
+
+---
+
+<div className="source-links">
+<Callout icon="terminal-2">
+    [Connect these docs](/use-these-docs) to Claude, VSCode, and more via MCP for real-time answers.
+</Callout>
+<Callout icon="edit">
+    [Edit this page on GitHub](https://github.com/langchain-ai/docs/edit/main/src/oss/python/integrations/providers/aimlapi.mdx) or [file an issue](https://github.com/langchain-ai/docs/issues/new/choose).
+</Callout>
+</div>
