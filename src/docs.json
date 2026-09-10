@@ -555,6 +555,7 @@
                         "group": "Popular Providers",
                         "icon": "users-group",
                         "pages": [
+                          "oss/python/integrations/providers/aimlapi",
                           "oss/python/integrations/providers/openai",
                           "oss/python/integrations/providers/anthropic",
                           "oss/python/integrations/providers/google",
